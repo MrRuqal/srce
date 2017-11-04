@@ -218,7 +218,7 @@ class LINE extends LineAPI {
            if(operation.type == 16 && this.stateStatus.bmsg == 1) {
              let itil = new Message();
              itil.to = operation.param1;
-             itil.text = "Terima Kasih Telah Invite Saya Di Group Anda ^_^\n\nSilahkan Ketik [Tab:Help] Untuk Mengetahui Command Bot Kami.\n\n-тєαм αиυ вσт-"
+             itil.text = "Terima Kasih Telah Invite Saya Di Group Anda ^_^\n\nSilahkan Ketik [Help] Untuk Mengetahui Command Bot Kami.-"
              this._client.sendMessage(0, itil);
            }
 
@@ -923,7 +923,7 @@ this._sendMessage(seq,"Mohon Maaf Anda Bukan Admin");
       }
 
         if(txt == 'help') {
-           this._sendMessage(seq, '==============================\n✍T҉̶̘̟̼̉̈́͐͋͌̊Σ̶Δ̶M҉̶̘͈̺̪͓̺ͩ͂̾ͪ̀̋ ̶̶̶̶G̶̶H̶̶O̶̶U̶̶L̶β̶Ω̶T҉̶̘̟̼̉̈́͐͋͌̊✈\n==============================\n☞ Myid\n☞ Tab:Gift\n☞ Halo\n☞ TAB:Help\n☞ Tab:CreatorBot\n☞ Bc [Jumlah] /[Text] (Jika Bc On)\n☞ TAB:InfoGroup\n☞ Tab:GroupCreator\n☞ Tab:Tag\n☞ Tab:Speed\n☞ Baca Read\n☞ Lihat Pembacaan Read\n☞ Tab:Status/Setting\n☞ Hapus Pembacaan Read\n☞ Hak Admin Dan Staff\n\n==============================\nтαв ѕтαff ¢σммαи∂\n==============================\n☞ Response Name\n☞ Tab:OpenUrl\n☞ Tab:CloseUrl\n☞ TAB:Bye\n☞ Tab:spam\n☞ Kick On/Off\n☞ Cancel On/Off\n☞ LockInvite On/Off\n☞ LockUpdateGroup On/Off\n☞ LockJoin On/Off\n☞ LockCancel On/Off\n☞ Tab:Kick「@」\n☞ Kickall (Kick On Terlebih Dahulu)\n☞ Tab:Msg\n☞ Bc On/Off\n☞ Bmsg On/Off\n\n==============================\nтαв α∂мιи ¢σммαи∂\n==============================\n☞ Tab:Mute\n☞ Tab:Unmute\n☞ Tab:add:staff\n☞ Tab:del:staff\n☞ Tab:BroadcastGroup [Text]\n☞ Tab:AddContact\n☞ Tab:CreateGroup [Jumlah]-[Nama]/[Mid]\n\n==============================฿Ɏ ₮Ɇ₳₥ ₳₦Ʉ ฿Ø₮\n==============================');
+           this._sendMessage(seq, '==============================\n✍T҉̶̘̟̼̉̈́͐͋͌̊Σ̶Δ̶M҉̶̘͈̺̪͓̺ͩ͂̾ͪ̀̋ ̶̶̶̶G̶̶H̶̶O̶̶U̶̶L̶β̶Ω̶T҉̶̘̟̼̉̈́͐͋͌̊✈\n==============================\n☞ Myid\n☞ gift\n☞ Halo\n☞ Help\n☞ creator\n☞ Bc [Jumlah] /[Text] (Jika Bc On)\n☞ igroup\n☞ gcreator\n☞ tagg\n☞ Speed\n☞ Baca Read\n☞ Lihat Read\n☞ Status/Setting\n☞ Hapus Read\n☞ Hak Admin Dan Staff\n\n==============================\nѕтαff ¢σммαи∂\n==============================\n☞ Response Name\n☞ buka url\n☞ tutup url\n☞ dadah\n☞ spam\n☞ Kick On/Off\n☞ Cancel On/Off\n☞ LockInvite On/Off\n☞ LockUpdateGroup On/Off\n☞ LockJoin On/Off\n☞ LockCancel On/Off\n☞ Kick「@」\n☞ Kickall (Kick On Terlebih Dahulu)\n☞ Msg\n☞ Bc On/Off\n☞ Bmsg On/Off\n\n==============================\nα∂мιи ¢σммαи∂\n==============================\n☞ Mute\n☞ Unmute\n☞ add:staff\n☞ del:staff\n☞ BroadcastGroup [Text]\n☞ AddContact\n☞ CreateGroup [Jumlah]-[Nama]/[Mid]\n\n==============================DAVEEE TAMVAN\n==============================');
         }
 
          if(txt == 'hak admin dan staff' || txt == 'hak staff dan admin') {
