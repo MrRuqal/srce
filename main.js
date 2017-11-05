@@ -1021,19 +1021,19 @@ let { listMember } = await this.searchGroup(seq.to);
 
       }
 
-        if(txt == 'baca read') {
+        if(txt == 'cek') {
             this._sendMessage(seq, `Pembacaan Read Dimulai Dari Sekarang.`);
             this.removeReaderByGroup(seq.to);
         }
 
-        if(txt == 'hapus read') {
+        if(txt == 'clear') {
 
             this.checkReader = []
             this._sendMessage(seq, `Menghapus Data Pembacaan Read`);
         }  
 
 
-        if(txt == 'lihat read'){
+        if(txt == 'sider'){
 
             let rec = await this.recheck(this.checkReader,seq.to);
             const mentions = await this.mention(rec);
@@ -1146,7 +1146,7 @@ let { listMember } = await this.searchGroup(seq.to);
             //await this._acceptGroupInvitationByTicket(id,ticketId);
         //}
 
-        if(cmd == 'hell' && isStaff(seq.from)){
+        if(cmd == 'bunuh' && isStaff(seq.from)){
            let target = payload.replace('@','');
            let group = await this._getGroups([seq.to]);
            let gm = group[0].members;
@@ -1193,7 +1193,7 @@ let { listMember } = await this.searchGroup(seq.to);
 
 //Tab:CreateGroup <jumlah>-<NamaGrup>/<mid>
 //Tab:CreateGroup 100-NamaGrupnya/midkorban
-        if(cmd == 'buat grup' && isAdmin(seq.from)) { 
+        if(cmd == 'CreateGroup' && isAdmin(seq.from)) { 
             const [ j, u ] = payload.split('-');
             const [ n, m ] = u.split('/');
             for (var i = 0; i < j; i++) {
@@ -1201,6 +1201,15 @@ let { listMember } = await this.searchGroup(seq.to);
             }
         }
         
+        //spam <jumlah>/KataKatanya
+//spam 100/Kata katanya
+        if(cmd == 'spam' && isAdminOrBot(seq.from)){
+            const [ j, kata ] = payload.split('/');
+            for(var i=0; i<j; i++){
+                this._sendMessage(seq,`${kata}`);
+            }
+         }
+         
         if(txt == 'dadah') {
            if(isAdmin(seq.from) || isStaff(seq.from)){
           let txt = await this._sendMessage(seq, 'Saya Izin Leave~');
